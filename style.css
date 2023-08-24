@@ -1,0 +1,245 @@
+* {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  /* padding: 0px 100px; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* background-color: aqua; */
+}
+#left {
+  width: 80%;
+  height: 100%;
+  /* background-color: red; */
+}
+#right {
+  width: 20%;
+  height: 100%;
+  /* background-color: blue; */
+}
+#topleft {
+  width: 100%;
+  height: 70%;
+  background-image: url(https://images.unsplash.com/photo-1557939628-3e476420db6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#bottomleft {
+  width: 100%;
+  height: 30%;
+  background-color: #dadadadb;
+}
+
+#bottomright {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  background-color: blueviolet;
+  background-image: url(https://images.unsplash.com/photo-1524478541675-a73fb38d8c9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-size: cover;
+  background-position: center;
+}
+#content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 37px 100px;
+}
+#contentleft {
+  display: flex;
+  width: 48%;
+  height: 10px;
+  /* background-color: blue; */
+}
+#a {
+  color: white;
+  font-size: 10px;
+  margin-top: 6px;
+  opacity: 0.6;
+}
+#b {
+  color: white;
+  font-size: 14px;
+  margin-left: 17px;
+}
+#b > p {
+  font-size: 10px;
+  margin-top: 17px;
+  opacity: 0.6;
+}
+#b h1 {
+  margin-left: 3px;
+}
+#contentright {
+  width: 42%;
+  height: 10px;
+  padding-right: 70px;
+  /* background-color: #dadada; */
+}
+h3 {
+  color: white;
+  font-size: 12px;
+  /* transition: color 0.3s ease; */
+}
+.row {
+  margin-top: 19px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+#contentright .icon {
+  display: flex;
+}
+.row .icon {
+  font-size: 10px;
+}
+.row h5 {
+  font-size: 8px;
+  opacity: 0.9;
+}
+.text {
+  margin-left: 10px;
+}
+.row p {
+  margin-top: 4px;
+  font-size: 8px;
+  opacity: 0.6;
+}
+h6 {
+  font-size: 0.72vw;
+}
+#b > p:hover {
+  font-weight: bolder;
+  color: cadetblue;
+  transition: color 0.3s ease;
+}
+h5:hover {
+  font-weight: bolder;
+  color: cadetblue;
+  transition: color 0.3s ease;
+}
+h1:hover {
+  font-weight: bolder;
+
+  color: cadetblue;
+  transition: color 0.3s ease;
+}
+
+h6:hover {
+  font-weight: bolder;
+
+  color: cadetblue;
+  transition: color 0.3s ease;
+}
+h3:hover {
+  font-weight: bolder;
+
+  color: cadetblue;
+  transition: color 0.3s ease;
+}
+#topright {
+  padding: 110px 120px 160px 66px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  text-decoration: none;
+
+  width: 100%;
+  height: 70%;
+
+  background-image: url(https://images.unsplash.com/photo-1492999104346-cabaa757be8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80);
+  background-size: cover;
+  background-position: center;
+}
+a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 21px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #000;
+  letter-spacing: 1.3px;
+}
+#selected::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 2px;
+  background-color: #000;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -21px;
+}
+#selected {
+  position: relative;
+  margin-left: 21px;
+}
+#icon {
+  position: absolute;
+  padding: 1.4vw 2.1vw 0vw 0vw;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  font-size: 1.45vw;
+}
+#iconb > i {
+  font-size: 1.8vw;
+}
+#iconb {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0%;
+  left: 0;
+  border-radius: 50%;
+}
+#next {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 40%;
+  background-color: #ffffff79;
+}
+#next h3 {
+  font-size: 1.2vw;
+  color: #000;
+  /* margin-left: 35%; */
+}
+
+#aa {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+#aa i {
+  font-size: 1.6vw;
+}
+#next p {
+  color: black;
+  font-size: 0.85vw;
+  margin-top: 10px;
+  margin-left: 19px;
+  letter-spacing: 9;
+}
